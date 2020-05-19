@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title> ACDC </title>
+      <link rel="stylesheet" href="cssnosotros.css">
+
+</head>
+<body>
+<p>
+   <img id="mostrar-imagen" onclick="cambiarImagen()" src="imagenes/imagen1.jpg" width="180" height="180"/>
+</p>
+<p> ¡Haz clic para cambiar la imagen! </p>
+<script>
+       function cambiarImagen() {
+            var imagenMostrada = document.getElementById (`mostrar-imagen´);
+            if (imagenMostrada.src.match("imagenes/imagen1.jpg")) {
+                imagenMostrada.src = "imagenes/imagen2.jpg";
+               }
+            else {
+                imagenMostrada.src = "imagenes/imagen1.jpg";
+               }
+        }
+</script>
+
+<h1> Somos ACDC </h1>
+<p> Esta es nuestra página web. Haz clic en los siguientes enlaces para visitar las siguientes secciones. </p>
+<ul>
+      <li> <a href="nosotros.html"> NOSOTROS </a> </li>
+      <li> <a href="canciones.html"> CANCIONES </a>   </li>
+      <li> <a href="conciertos.html"> CONCIERTOS </a> </li>
+      <li> <a href="comoorganizarunconcierto.html"> CONSEJOS </a> </li>
+</ul>
+</body>
+</html>
